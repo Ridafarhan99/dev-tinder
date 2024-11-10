@@ -14,6 +14,11 @@ app.get("/hello", (req, res) => {
   res.send("Hello");
 });
 
+// testing
+app.use("/error", (req, res) => {
+  res.send("Page Not Found");
+});
+
 app.listen(port, () => {
   console.log(`App listening to Port ${port}`);
 });
